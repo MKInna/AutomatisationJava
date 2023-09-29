@@ -7,14 +7,17 @@ public class SearchPage extends BaseMethods {
     private final By search = By.xpath("//form/div/input");
     private final By result = By.xpath("//h1/span");
 
-    public void clickOnTabSearch(){
+    public SearchPage clickOnTabSearch(){
         click(search);
+        return this;
     }
-    public void insertText(String text){
+    public SearchPage insertText(String text){
         send(search,text);
+        return this;
     }
-    public void clickTabEnter(){
+    public SearchPage clickTabEnter(){
         clickEnter(search);
+        return this;
     }
     public String getTitle(){
       return getTextFromElement(result);
