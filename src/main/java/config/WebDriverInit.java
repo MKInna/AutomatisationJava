@@ -4,23 +4,23 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WebDriverInit {
-   private static volatile WebDriver driver;
-   private WebDriverInit(){}
+    private static volatile WebDriver driver;
+    private WebDriverInit(){}
 
     public static synchronized WebDriver getDriver(){
-       if (driver == null){
-           synchronized (WebDriverInit.class){
-               if(driver == null){
-                   WebDriverManager.chromiumdriver().setup();
-                  driver = new ChromeDriver();
-               }
-           }
-       }
+        if (driver == null){
+            synchronized (WebDriverInit.class){
+                if(driver == null){
+                    WebDriverManager.chromiumdriver().setup();
+                    driver = new ChromeDriver();
+                }
+            }
+        }
         return driver;
     }
     public static void closeDriver(){
 
-       driver.quit();
-       driver = null;
+        driver.quit();
+        driver = null;
     }
 }

@@ -3,10 +3,12 @@ package po;
 import base.BaseMethods;
 import org.openqa.selenium.By;
 
+
+
 public class GoogleSearchPage extends BaseMethods {
-    private final By fieldSearch = By.xpath("//textarea[@class='gLFyf']");
-    private final By buttonSearch = By.xpath("//input[@class='gNO89b']");
-    private final By linkFirstResultSearch = By.xpath("//h3[@class='LC20lb MBeuO DKV0Md'][1]");
+    private final By fieldSearch = By.xpath("//textarea");
+    private final By buttonSearch = By.xpath("//input[@class='RNmpXc']");
+    private final By linkFirstResultSearch = By.xpath("//h3[@class='LC20lb MBeuO DKV0Md']");
 
     public GoogleSearchPage clickSearchField() {
         click(fieldSearch);
@@ -16,14 +18,16 @@ public class GoogleSearchPage extends BaseMethods {
         send(fieldSearch, searchText);
         return this;
     }
-    public GoogleSearchPage clickEnter(){
-        clickEnter(buttonSearch);
+    /* public GoogleSearchPage clickEnter(){
+         clickEnter(buttonSearch);;
+         return this;
+     }*/
+    public GoogleSearchPage click(){
+        clickEnter(fieldSearch);
         return this;
     }
     public GoogleSearchPage clickOnResult(){
         click(linkFirstResultSearch);
         return this;
     }
-
-
 }
