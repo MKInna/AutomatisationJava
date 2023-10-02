@@ -1,7 +1,7 @@
-package po;
+package selenium.po;
 
-import base.BaseMethods;
-import base.Table;
+import selenium.base.BaseMethods;
+import selenium.base.Table;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 

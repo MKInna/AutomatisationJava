@@ -1,5 +1,7 @@
+package selenium;
+
 import org.testng.annotations.Test;
-import po.TableHeadPage;
+import selenium.po.TableHeadPage;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class SearchByTableHeadTest extends BaseTest {

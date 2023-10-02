@@ -1,6 +1,6 @@
-package builder;
+package selenium.builder;
 
-import po.AuthorizationPage;
+import selenium.po.AuthorizationPage;
 
 public class LoginPageBuilder {
     private String userName;

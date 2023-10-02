@@ -1,5 +1,7 @@
+package selenium;
+
 import org.testng.annotations.Test;
-import po.LoadFilePage;
+import selenium.po.LoadFilePage;
 
 public class LoadFileTest extends BaseTest {
     @Test

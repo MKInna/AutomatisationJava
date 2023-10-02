@@ -1,8 +1,7 @@
-package po;
+package selenium.po;
 
-import base.BaseMethods;
+import selenium.base.BaseMethods;
 import org.openqa.selenium.By;
-
 
 
 public class GoogleSearchPage extends BaseMethods {

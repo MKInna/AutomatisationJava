@@ -1,15 +1,16 @@
-package base;
+package selenium.base;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static config.WebDriverInit.getDriver;
+import static java.time.Duration.ofSeconds;
+import static selenium.config.WebDriverInit.getDriver;
 
 public class BaseMethods {
     public WebDriverWait getWait() {
-        return new WebDriverWait(getDriver(), 15);
+        return new WebDriverWait(getDriver(), ofSeconds(15));
     }
     protected void send(By locator, String text) {
         getWait().until(ExpectedConditions.presenceOfElementLocated(locator)).sendKeys(text);
@@ -24,7 +25,7 @@ public class BaseMethods {
         return getWait().until(d -> d.findElement(locator).getText());
     }
     public WebDriverWait getWait(int time) {
-        return new WebDriverWait(getDriver(), time);
+        return new WebDriverWait(getDriver(), ofSeconds(time));
     }
     protected void send(By locator, String text, int time) {
         getWait(time).until(ExpectedConditions.presenceOfElementLocated(locator)).sendKeys(text);

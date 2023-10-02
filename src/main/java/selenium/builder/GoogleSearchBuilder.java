@@ -1,6 +1,6 @@
-package builder;
+package selenium.builder;
 
-import po.GoogleSearchPage;
+import selenium.po.GoogleSearchPage;
 
 public class GoogleSearchBuilder {
     private String searchText;
