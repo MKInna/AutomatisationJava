@@ -1,6 +1,8 @@
-import builder.GoogleSearchBuilder;
+package selenium;
+
+import selenium.builder.GoogleSearchBuilder;
 import org.testng.annotations.Test;
-import po.GoogleSearchPage;
+import selenium.po.GoogleSearchPage;
 
 public class GoogleSearchTest extends BaseTest {
     @Test

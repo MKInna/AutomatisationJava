@@ -13,8 +13,8 @@
         </groups>
 
         <classes>
-            <class name="AuthorisationTest"/>
-            <class name="SearchTest"/>
+            <class name="selenium.AuthorisationTest"/>
+            <class name="selenium.SearchTest"/>
         </classes>
     </test>
 </suite>

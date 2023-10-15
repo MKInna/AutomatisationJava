@@ -1,6 +1,7 @@
-import org.testng.annotations.DataProvider;
+package selenium;
+
 import org.testng.annotations.Test;
-import po.SearchPage;
+import selenium.po.SearchPage;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.testng.AssertJUnit.assertEquals;

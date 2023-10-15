@@ -1,5 +1,7 @@
+package selenium;
+
 import org.testng.annotations.Test;
-import po.TablePage;
+import selenium.po.TablePage;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class ActionTableTest extends BaseTest {

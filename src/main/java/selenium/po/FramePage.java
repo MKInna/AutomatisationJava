@@ -1,8 +1,7 @@
-package po;
+package selenium.po;
 
-import base.BaseMethods;
+import selenium.base.BaseMethods;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 public class FramePage extends BaseMethods {
     private final By frameChild = By.xpath("//p");
