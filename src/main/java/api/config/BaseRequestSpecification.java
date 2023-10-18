@@ -13,8 +13,17 @@ public class BaseRequestSpecification {
         return new RequestSpecBuilder()
                 .setBaseUri(url)
                 .setBasePath("v2")
-                .addHeader(APPLICATION_JSON, CONTENT_TYPE)
+                .addHeader(CONTENT_TYPE,APPLICATION_JSON)
                 .build();
+
+    }
+    public RequestSpecification requestGetUserName(){
+        return new RequestSpecBuilder()
+                .setBaseUri(url)
+                .setBasePath("v2/user/Alex")
+                .addHeader(CONTENT_TYPE,APPLICATION_JSON)
+                .build();
+
 
     }
 }

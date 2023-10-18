@@ -4,7 +4,6 @@ import api.config.BaseRequestSpecification;
 import api.config.Request;
 import api.dto.UserBuilder;
 import io.restassured.response.Response;
-
 import static api.utils.Utils.toJson;
 
 public class UserSteps extends Request {
@@ -14,6 +13,9 @@ public class UserSteps extends Request {
             .username("Alex")
             .build();
     public Response createUser(){
-return post(baseRequest.request(), toJson(user), "/user");
+        return post(baseRequest.request(), toJson(user), "/user");
+    }
+    public String getUser(){
+        return get();
     }
 }
