@@ -1,11 +1,8 @@
 package api.utils;
-
 import com.google.gson.Gson;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Properties;
 
@@ -23,4 +20,6 @@ public class Utils {
     public static <T> String toJson (T object){
         return new Gson().toJson(object);
     }
+    public static <T> T fromJson(String json, Class<T> classOfT){
+        return new Gson().fromJson(json, classOfT);  }
 }
