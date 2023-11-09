@@ -17,7 +17,7 @@ public class BaseRequestSpecification {
                 .build();
 
     }
-    public RequestSpecification requestGetUserName(){
+    /*public RequestSpecification requestGetUserName(){
         return new RequestSpecBuilder()
                 .setBaseUri(url)
                 .setBasePath("v2/user/Alex")
@@ -25,5 +25,5 @@ public class BaseRequestSpecification {
                 .build();
 
 
-    }
+    }*/
 }
