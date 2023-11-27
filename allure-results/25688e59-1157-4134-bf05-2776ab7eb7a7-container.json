@@ -1,1 +1,0 @@
-{"uuid":"25688e59-1157-4134-bf05-2776ab7eb7a7","name":"DB.DBTest.ConnectDB","children":["216387a0-509f-48a3-b3fb-493d915689f5"],"description":"","befores":[{"name":"ConnectDB","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1700681188105,"stop":1700681188502}],"afters":[],"start":1700681188104,"stop":1700681188504}
